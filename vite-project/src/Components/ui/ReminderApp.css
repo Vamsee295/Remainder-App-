@@ -1,0 +1,130 @@
+.reminder-app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.app-title {
+    margin: 0 0 8px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.app-subtitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.notification-banner {
+    background-color: #FFF3CD;
+    border: 2px solid #FFB800;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.banner-text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    flex: 1;
+    min-width: 200px;
+}
+
+.notification-banner .btn {
+    flex: 0;
+    white-space: nowrap;
+}
+
+.add-button-container {
+    margin-bottom: 24px;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab:hover {
+    color: #000000;
+}
+
+.tab.active {
+    color: #000000;
+    border-bottom-color: #000000;
+}
+
+.tab-content {
+    min-height: 300px;
+}
+
+.reminder-list {
+    /* Container for reminder cards */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .reminder-app {
+        padding: 16px;
+    }
+
+    .app-title {
+        font-size: 28px;
+    }
+
+    .notification-banner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .notification-banner .btn {
+        width: 100%;
+    }
+}
